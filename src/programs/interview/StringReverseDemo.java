@@ -3,7 +3,6 @@ package programs.interview;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.ListIterator;
 
 //Different ways to reverse String
 
@@ -50,11 +49,10 @@ public class StringReverseDemo {
 			lt.add(c);
 		}
 		Collections.reverse(lt);
-		ListIterator l = lt.listIterator();
-		while (l.hasNext()) 
+		for(char c : lt) 
 		{
 			//System.out.print(l.next());
-			reverse+=l.next();
+			reverse+=c;
 		}
 		System.out.println();
 		System.out.println(reverse+" ola ho ola");
